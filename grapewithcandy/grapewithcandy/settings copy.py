@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n!po+#ktzmw%$mtxu@!s=$qt)&loi(@#0ae&r=qq)he#4^94r@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'juevini.pythonanywhere.com']
 
 
 # Application definition
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'grapewithcandy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / '',
     }
 }
 
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/Sao_paulo'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 

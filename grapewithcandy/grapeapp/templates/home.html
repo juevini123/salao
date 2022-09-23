@@ -34,10 +34,12 @@
         </ul>
 
 
-        <div class="search-box"></div>
+        <div class="search-box">
+
+        </div>
         <input type="text" name="" placeholder="Faça sua pesquisa">
 
-
+    
 
         <input id="hamburguer" type="checkbox" style="display: none;">
 
@@ -46,7 +48,7 @@
         </label>
         
             </nav>
-
+        
             <div class="pop-up" id="pop-up" onclick="fechar()">
                 <div class="pop-up-content">
                     <div class="pop-up-single">
@@ -57,6 +59,7 @@
                 <!--pop-up-content-->
             </div>
             <!--pop-up-->
+
 
 
     <!--div produtos-->
@@ -79,7 +82,20 @@
     <div class="div-produto" id="q6">
         <img src="https://torcedorfanaticostore.com/wp-content/uploads/2020/11/B2FC64CF-41F1-45BE-993D-E9F69C988CB7.png">
     </div>
+
+    {% block body2 %}
+
+    <div class =  "conteudo">
+        Teste de leitura<br>
+        {% for c in usuario %}
+             {{c.nome}}<br>      
+         {% endfor %}
+      </div>
     
+    {% endblock %}
+
+    {% block body %}
+    {% endblock %}
 
     <!--Rodapé-->
 

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n!po+#ktzmw%$mtxu@!s=$qt)&loi(@#0ae&r=qq)he#4^94r@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'juevini.pythonanywhere.com']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'grapewithcandy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'salao',
+        'USER': 'root',
+        'PASSWORD': 'Senai2019,',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -106,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/Sao_paulo'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -117,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT= BASE_DIR / 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
